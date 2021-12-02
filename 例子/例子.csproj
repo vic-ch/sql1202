@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAE2865B-5126-492F-996E-E11B88F0B14B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>例子</RootNamespace>
+    <AssemblyName>例子</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="courseinfo\frmcourse_input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="courseinfo\frmcourse_input.Designer.cs">
+      <DependentUpon>frmcourse_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmodifypsw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmodifypsw.Designer.cs">
+      <DependentUpon>frmmodifypsw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmview.Designer.cs">
+      <DependentUpon>frmview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gradeinfo\frmgrade_input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gradeinfo\frmgrade_input.Designer.cs">
+      <DependentUpon>frmgrade_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="studentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="studentinfo\frmstudentprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentinfo\frmstudentprint.Designer.cs">
+      <DependentUpon>frmstudentprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentinfo\frmstudent_input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentinfo\frmstudent_input.Designer.cs">
+      <DependentUpon>frmstudent_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systeminfo\frmDataRevert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systeminfo\frmDataRevert.Designer.cs">
+      <DependentUpon>frmDataRevert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systeminfo\frmDataStor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systeminfo\frmDataStor.Designer.cs">
+      <DependentUpon>frmDataStor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="courseinfo\frmcourse_input.resx">
+      <DependentUpon>frmcourse_input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmodifypsw.resx">
+      <DependentUpon>frmmodifypsw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmview.resx">
+      <DependentUpon>frmview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gradeinfo\frmgrade_input.resx">
+      <DependentUpon>frmgrade_input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="studentinfo\frmstudentprint.resx">
+      <DependentUpon>frmstudentprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentinfo\frmstudent_input.resx">
+      <DependentUpon>frmstudent_input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentinfo\Report1.rdlc" />
+    <EmbeddedResource Include="systeminfo\frmDataRevert.resx">
+      <DependentUpon>frmDataRevert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="systeminfo\frmDataStor.resx">
+      <DependentUpon>frmDataStor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="studentDataSet.xsc">
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet.xss">
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet1.xsc">
+      <DependentUpon>studentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet1.xss">
+      <DependentUpon>studentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet2.xsc">
+      <DependentUpon>studentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet2.xss">
+      <DependentUpon>studentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet3.xsc">
+      <DependentUpon>studentDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet3.xss">
+      <DependentUpon>studentDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet4.xsc">
+      <DependentUpon>studentDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet4.xss">
+      <DependentUpon>studentDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet5.xsc">
+      <DependentUpon>studentDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet5.xss">
+      <DependentUpon>studentDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ki con.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign136.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
