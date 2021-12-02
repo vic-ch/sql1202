@@ -102,21 +102,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>studentDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="studentDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>studentDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="studentDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>studentDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="studentDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>studentDataSet5.xsd</DependentUpon>
-    </Compile>
     <Compile Include="studentinfo\frmstudentprint.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,39 +208,6 @@
     </None>
     <None Include="studentDataSet2.xss">
       <DependentUpon>studentDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="studentDataSet3.xsc">
-      <DependentUpon>studentDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="studentDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>studentDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="studentDataSet3.xss">
-      <DependentUpon>studentDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="studentDataSet4.xsc">
-      <DependentUpon>studentDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="studentDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>studentDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="studentDataSet4.xss">
-      <DependentUpon>studentDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="studentDataSet5.xsc">
-      <DependentUpon>studentDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="studentDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>studentDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="studentDataSet5.xss">
-      <DependentUpon>studentDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
